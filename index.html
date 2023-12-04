@@ -8,7 +8,7 @@
     (async () => {
       const res = await fetch('https://eternalrival.github.io/mycoolproject/products.json')
       const json = await res.json()
-      document.body.append(JSON.stringify(json))
+      document.body.append(JSON.stringify(json, null, '\t'))
     })()
   </script>
 </head>
