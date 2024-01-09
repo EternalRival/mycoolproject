@@ -6,7 +6,7 @@
   <title>Document</title>
   <script defer>
     (async () => {
-      const res = await fetch('https://eternalrival.github.io/mycoolproject/products.json')
+			const res = await fetch('https://eternalrival.github.io/mycoolproject/products.json')
       const json = await res.json()
       document.body.append(JSON.stringify(json, null, '\t'))
     })()
